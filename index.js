@@ -48,6 +48,7 @@ module.exports = function(options) {
   }
 
   function normalName(name) {
-    return fullName(name).replace(/(\.html)?\.ejs$/, '');
+    //return fullName(name).replace(/(\.html)?\.ejs$/, '');
+    return fullName(name).replace(/\..*/, '');
   }
 };
